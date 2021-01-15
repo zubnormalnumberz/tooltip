@@ -29,25 +29,25 @@ De esta manera, cuando mantengamos pulsado durante un tiempo el elemento que hem
 
 ```dart
 Row(
-children: [
-Flexible(
-child: TextField(
-obscureText: true,
-controller: passwordController,
-decoration: InputDecoration(
-border: OutlineInputBorder(),
-labelText: 'Contraseña',
-),
-),
-),
-Tooltip(
-message: 'Mínimo 8 caracteres',
-child: Padding(
-padding: EdgeInsets.all(10),
-child: Icon(Icons.help),
-),
-),
-],
+    children: [
+        Flexible(
+            child: TextField(
+                obscureText: true,
+                controller: passwordController,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Contraseña',
+                ),
+            ),
+        ),
+        Tooltip(
+            message: 'Mínimo 8 caracteres',
+            child: Padding(
+                padding: EdgeInsets.all(10),
+                child: Icon(Icons.help),
+            ),
+        ),
+    ],
 )
 ```
 
@@ -64,19 +64,18 @@ La clase Tooltip es muy personalizable. Estos son algunos de los atributos que s
 
 ```dart
 Tooltip(
-	decoration: BoxDecoration(
+    decoration: BoxDecoration(
 		color: Colors.red.withOpacity(0.9),
-			borderRadius:
-		    const BorderRadius.all(Radius.circular(4),
-		    ),
-  ),
-  textStyle: TextStyle(
-	  color: Colors.white, fontWeight: FontWeight.bold),
-  message: "Añadir a mis favoritos",
-  child: LikeButton(
+        borderRadius: const BorderRadius.all(Radius.circular(4),
+        ),
+    ),
+    textStyle: TextStyle(
+	    color: Colors.white, fontWeight: FontWeight.bold),
+    message: "Añadir a mis favoritos",
+    child: LikeButton(
 		likeCount: 665,
-    onTap: onLikeButtonTapped,
-  ),
+        onTap: onLikeButtonTapped,
+    ),
 )
 ```
 
@@ -87,8 +86,8 @@ Hay que mencionar que algunos elementos de Flutter como IconButton, FloatingActi
 ```dart
 IconButton(
 	icon: Icon(Icons.share),
-  onPressed: null,
-  tooltip: "Share",
+    onPressed: null,
+    tooltip: "Share",
 )
 ```
 
