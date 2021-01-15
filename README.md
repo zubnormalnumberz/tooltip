@@ -20,7 +20,7 @@ El uso de Tooltip en Flutter es bastante sencillo. Tan solo hay que incluir el w
 
 ```dart
 Tooltip(
-	message: "El mensaje que queremos mostrar",
+    message: "El mensaje que queremos mostrar",
 	child: nuestroWidget()
 )
 ```
@@ -29,24 +29,24 @@ De esta manera, cuando mantengamos pulsado durante un tiempo el elemento que hem
 
 ```dart
 Row(
-	children: [
-		Flexible(
-			child: TextField(
-	      obscureText: true,
-	      controller: passwordController,
-	      decoration: InputDecoration(
-	        border: OutlineInputBorder(),
-	        labelText: 'Contraseña',
-	      ),
+    children: [
+	    Flexible(
+            child: TextField(
+                obscureText: true,
+                controller: passwordController,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Contraseña',
+                ),
+            ),
+        ),
+        Tooltip(
+	        message: 'Mínimo 8 caracteres',
+            child: Padding(
+                padding: EdgeInsets.all(10),
+                child: Icon(Icons.help),
+            ),
 	    ),
-	  ),
-	  Tooltip(
-	    message: 'Mínimo 8 caracteres',
-	    child: Padding(
-	      padding: EdgeInsets.all(10),
-	      child: Icon(Icons.help),
-	    ),
-	  ),
 	],
 )
 ```
