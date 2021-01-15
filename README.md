@@ -21,7 +21,7 @@ El uso de Tooltip en Flutter es bastante sencillo. Tan solo hay que incluir el w
 ```dart
 Tooltip(
     message: "El mensaje que queremos mostrar",
-	child: nuestroWidget()
+    child: nuestroWidget()
 )
 ```
 
@@ -65,15 +65,15 @@ La clase Tooltip es muy personalizable. Estos son algunos de los atributos que s
 ```dart
 Tooltip(
     decoration: BoxDecoration(
-		color: Colors.red.withOpacity(0.9),
+        color: Colors.red.withOpacity(0.9),
         borderRadius: const BorderRadius.all(Radius.circular(4),
         ),
     ),
     textStyle: TextStyle(
-	    color: Colors.white, fontWeight: FontWeight.bold),
-    message: "Añadir a mis favoritos",
+        color: Colors.white, fontWeight: FontWeight.bold),
+        message: "Añadir a mis favoritos",
     child: LikeButton(
-		likeCount: 665,
+        likeCount: 665,
         onTap: onLikeButtonTapped,
     ),
 )
@@ -85,7 +85,7 @@ Hay que mencionar que algunos elementos de Flutter como IconButton, FloatingActi
 
 ```dart
 IconButton(
-	icon: Icon(Icons.share),
+    icon: Icon(Icons.share),
     onPressed: null,
     tooltip: "Share",
 )
